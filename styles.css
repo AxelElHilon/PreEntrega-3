@@ -1,4 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     color: white;
     background-color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/*Parte del Logo*/
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.logo-principal{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+/*Parte de Navegacion*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(151, 150, 150);
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Parte Principal de la Pagina*/
+
+.texto-principal{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-secundario{
+    display: flex;
+    justify-content: center;
+}
+
+/*Seccion de Productos*/
+
+.productos-contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,5fr);
+    grid-template-rows: repeat(3,200px);
+    gap: 5px;
+    background-color: white;
+    color: black;
+    margin: 15px;
+    justify-items: center;
+
+}
+.productos{
+    width: 100px;
+    height: 150px;
+}    
+
+.texto-producto{
+    display: flex;
+    text-align: center;
 }
