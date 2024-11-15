@@ -15,8 +15,13 @@ header{
     background-color: white;
     display: flex;
     justify-content: center;
-
+    background-image: url(calle2.jpg);
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+ 
 }
+
 .logo-principal{
     width: 100px;
     height: auto;
@@ -51,21 +56,102 @@ a{
 
 .productos-contenedor{
     display: grid;
-    grid-template-columns: repeat(2,5fr);
-    grid-template-rows: repeat(3,200px);
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: repeat(2,180px);
     gap: 5px;
-    background-color: white;
+    background: radial-gradient(ellipse, white,rgb(174, 172, 172));
     color: black;
-    margin: 15px;
+    margin: auto;
     justify-items: center;
-
-}
-.productos{
-    width: 100px;
-    height: 150px;
-}    
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    }
 
 .texto-producto{
     display: flex;
+    text-align: center;
+}
+
+
+.zoom-imagen{
+    overflow: hidden;
+    width: 100px;
+    height: 175px;
+    text-align: center;
+}
+
+.zoom-imagen img{
+    width: 100px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.zoom-imagen:hover img {
+    transform: scale(1.1);
+
+}
+
+.boton{
+    background-color: white;
+    color: black;
+    padding: 1px 3px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.boton:hover{
+    background-color: rgb(136, 132, 132);
+    transform: translateY(-3px);
+}
+
+.boton:active{
+    background-color: green;
+    transform: translateY(1px);
+}
+
+.seccion-imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.imagenes{
+    width: 200%;
+    height: auto;
+    transition: transform 0.3s ease;
+    opacity: 0.9;
+}
+
+.imagenes:hover{
+    transform: scale(1.2,1);
+}
+/*Parte Inferior de la Pagina*/
+
+footer{
+    background-color: rgb(105, 104, 104);
+}
+
+.logos-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 50px;
+}
+
+.logo-zoom{
+    width: 50px;
+    height: 50px;
+    transition: 0.6s ease;
+    }
+
+.logo-zoom:hover{
+    transform: rotate(360deg);
+}
+
+p{
     text-align: center;
 }
